@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+	<link rel="stylesheet" href="css/index.css" media="all" />
+</head>
+
+<body>
+	<div class="middle-box header">
+		<a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+			<img src="img/logo.png" />
+		</a>
+		<ul class="nav">
+			<li><a href="acc.html">结算账户</a></li>
+            <li><a href="accBalance.html">结算对账</a></li>
+		</ul>
+	</div>
+	<div class="nav-level-two">
+		<div class="middle-box">
+			<ul class="nav-name-list">
+				<li class="nav-name-item active">
+					<a href="tradeRecord.html">收付款信息</a>
+				</li>
+				<li class="nav-name-item">
+					<a href="tradeRecordIO.html">平安虚账户出入金</a>
+				</li>
+				<li class="nav-name-item">
+					<a href="tradeOrderDetail.html">账户明细</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content middle-box">
+		<p class="content-header">订单详情</p>
+		<div class="table-content info order-detail">
+			<p class="order-detail-header">应收付订单信息</p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>日期</th>
+						<th>商户订单号</th>
+						<th>对方</th>
+						<th>金额(元)</th>
+						<th>应收/应付</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<p>2016-10-31</p>
+							<p>15:10:43</p>
+						</td>
+						<td>123456789012345678</td>
+						<td>新奥能源贸易有限公司</td>
+						<td>1,000.00</td>
+						<td>应收</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="table-content info order-detail">
+			<p class="order-detail-header">实收付订单信息</p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>日期</th>
+						<th>商户订单号</th>
+						<th>付款账户</th>
+						<th>收款账户</th>
+						<th>金额(元)</th>
+						<th>类型</th>
+						<th>实收/实付</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<p>2016-10-31</p>
+							<p>15:53:56</p>
+						</td>
+						<td>654456789012345678</td>
+						<td>
+							<p>**** **** **** 1234</p>
+							<p>陕西恒泰新能源有限公司</p>
+						</td>
+						<td>
+							<p>**** **** **** 7345</p>
+							<p>新奥能源贸易有限公司</p>
+						</td>
+						<td>500.00</td>
+						<td>支付 | 担保支付</td>
+						<td>实收</td>
+						<td>交易成功</td>
+					</tr>
+					<tr>
+						<td>
+							<p>2016-10-31</p>
+							<p>15:54:59</p>
+						</td>
+						<td>654456789012345678</td>
+						<td>
+							<p>**** **** **** 1234</p>
+							<p>陕西恒泰新能源有限公司</p>
+						</td>
+						<td>
+							<p>**** **** **** 7345</p>
+							<p>新奥能源贸易有限公司</p>
+						</td>
+						<td>500.00</td>
+						<td>支付 | 担保支付</td>
+						<td>实收</td>
+						<td>交易成功</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="table-content info order-detail">
+			<p class="order-detail-header">退款信息</p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>日期</th>
+						<th>原支付订单号</th>
+						<th>退款订单号</th>
+						<th>退款至账户</th>
+						<th>退款金额(元)</th>
+						<th>类型</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<p>2016-10-31</p>
+							<p>15:58:15</p>
+						</td>
+						<td>123456789012345678</td>
+						<td>123456789012345000</td>
+						<td>
+							<p>**** **** **** 1234</p>
+							<p>陕西恒泰新能源有限公司</p>
+						</td>
+						<td>500.00</td>
+						<td>退款</td>
+						<td>交易成功</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>
