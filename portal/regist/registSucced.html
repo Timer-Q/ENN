@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title><script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="global-header">
+            <div class="middle-box">
+                <ul class="global-content fr">
+                    <li class="global-item">您好，欢迎使用好气网</li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-box header">
+            <a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+                <img src="../img/logo.png" />
+            </a>
+            <ul class="nav">
+                <li><a href="../login.html">登录</a></li>
+                <li><a href="../helpCenter/helpCenter.html">帮助中心</a></li>
+                <li><a href="../aboutUs/aboutUs.html">关于我们</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="step-content">
+        <ol class="step clearfix">
+            <li class="step-num">
+                <span class="">1</span>
+                <p>创建个人账户</p>
+            </li>
+            <li class="step-line"></li>
+            <li class="step-num">
+                <div class="">
+                    <span>2</span>
+                    <p>完善信息</p>
+                </div>
+            </li>
+            <li class="step-line"></li>
+            <li class="step-num">
+                <div class="step-num-success">
+                    <span>3</span>
+                    <p>成功</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <div class="content middle-box">
+        <div class="container">
+            <div class="prompt-message clearfix">
+                <div class="prompt-content success">
+                    <p class="font-large">注册成功，手机号为<span class="color-danger">135****2675</span></p>
+                    <p class="color-default">现在您可进入<a href="../acc.html" class="color-primary"> 首页</a></p>
+                    <p class="color-default">倒计时 <span id="count">5</span> 秒后登录好气网支付！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="copyright">
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=cq&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">平台介绍</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=bg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">联系我们</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=sg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">法律声明</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=tg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">友情链接</a>
+        </p>
+        <p class="copyright">
+            COPYRIGHT©好气网 www.greatgas.cn <a href="http://www.miitbeian.gov.cn" target="_blank" class="color-primary">湘ICP备15010771号-1</a> <a href="http://www.miit.cc/verifyseal/157622" target="_blank" class="color-primary">湘B2-20150111</a>
+        </p>
+    </footer>
+    <script>
+        $(function() {
+            var count = 4;
+            var countDown = setInterval(function() {
+                if (count >= 0) {
+                    $('#count').text(count--);
+                } else {
+                    clearInterval(countDown)
+                    window.location.href = '../acc.html'
+                }
+            }, 1000);
+
+        })
+    </script>
+</body>
+
+</html>

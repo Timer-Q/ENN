@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>账面余额</title><script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/index.css" media="all" />
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="global-header">
+            <div class="middle-box">
+                <ul class="global-content fr">
+                    <li class="global-item">您好，134****5648</li>
+                    <li class="global-item"> | </li>
+                    <li class="global-item"><a href="helpCenter/helpCenter.html">帮助中心</a></li>
+                    <li class="global-item"> | </li>
+                    <li class="global-item">
+                        <a href="login.html">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-box header">
+            <a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+                <img src="img/logo.png" />
+            </a>
+            <ul class="nav">
+                <li><a href="acc.html">首页</a></li>
+                <li><a href="tradeRecord.html">账户交易</a></li>
+                <li class="active"><a href="accBalance.html">账面结算</a></li>
+                <li><a href="securityCenter.html">安全中心</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="nav-level-two">
+        <div class="middle-box">
+            <ul class="nav-name-list">
+                <li class="nav-name-item active">
+                    <a href="#">账面余额</a>
+                </li>
+                <li class="nav-name-item">
+                    <a href="accountPayable.html">付款结算单</a>
+                </li>
+                <li class="nav-name-item">
+                    <a href="accountReciveable.html">收款结算单</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content middle-box">
+        <p class="content-header">账面余额</p>
+        <div class="form-group">
+            <label for="" class="form-label">公司名称：</label>
+            <input type="text" name="" value="" class="form-control" placeholder="请输入公司名称" />
+            <span class="btn-group pd-l-20">
+				<button class="btn btn-sm btn-primary">筛选</button>
+			</span>
+        </div>
+        <p class="clearfix"><span class="tools">单位：元</span></p>
+        <div class="info business">
+            <div class="business-card">
+                <div class="company">
+                    <div class="company-info">
+                        新奥能源贸易有限公司
+                        <span class="font-normal color-primary">(营业执照号：12345678998765432155)</span>
+                    </div>
+                    <span class="pd-l-20 font-normal">
+                        账面余额：
+                        <em>-2,000.00</em>
+                        <span class="tips">
+                            <i class="tips-content tips-content-left">
+                                账面余额=应收余额-应付余额
+                            </i>
+                        </span>
+                    </span>
+                </div>
+                <div class="wrapper-content">
+                    <div class="wrapper width-border">
+                        <div class="wrapper-content width-border">
+                            <p class="font-middle">应收余额：</p>
+                            <p><span class="color-success font-middle">4,500.00</span><span class="pd-l-20"><a href='accBalanceCollection.html' class="btn btn-xs btn-default color-success">查看明细</a></span></p>
+                            <p class="both-side-distribute clearfix"><label>未开票金额：</label><span>3,000.00</span><a href='javascript:;' class="btn btn-xs btn-default fr color-success">未结算数据查询</a></p>
+                        </div>
+                        <div class="wrapper-content">
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label">配送中金额：</label><span class="color-success">9,000.00</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label">应收总汇：</label><span class="color-success">15,500.00</span>
+                                </p>
+                            </div>
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label long-width">到货未对账金额：</label><span class="color-success">2,000.00</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label long-width">统计时间：</label><span>2016-12-11 17:17:20</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="wrapper-content width-border">
+                            <p class="font-middle">应付余额：</p>
+                            <p><span class="color-warning font-middle">6,500.00</span><span class="pd-l-20"><a href='accBalancePay.html' class="btn btn-xs btn-default color-warning">查看明细</a></span></p>
+                            <p class="both-side-distribute clearfix"><span>未回票金额：16,800.00</span><a href='javascript:;' class="btn btn-xs btn-default fr color-warning">未结算数据查询</a></p>
+                        </div>
+                        <div class="wrapper-content">
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label">配送中金额：</label><span class="color-warning">9,000.00</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label">应付总汇：</label><span class="color-warning">17,500.00</span>
+                                </p>
+                            </div>
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label long-width">到货未对账金额：</label><span class="color-warning">2,000.00</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label long-width">统计时间：</label><span>2016-12-11 17:17:20</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info business">
+            <div class="business-card">
+                <div class="company">
+                    <div class="company-info">
+                        新奥能源贸易有限公司
+                        <span class="font-normal color-primary">(营业执照号：12345678998765432155)</span>
+                    </div>
+                    <span class="pd-l-20 font-normal">
+                        账面余额：
+                        <em>-2,000.00</em>
+                        <span class="tips">
+                            <i class="tips-content tips-content-left">
+                                账面余额=应收余额-应付余额
+                            </i>
+                        </span>
+                    </span>
+                </div>
+                <div class="wrapper-content">
+                    <div class="wrapper width-border">
+                        <div class="wrapper-content width-border">
+                            <p class="font-middle">应收余额：</p>
+                            <p><span class="color-success font-middle">4,500.00</span><span class="pd-l-20"><a href='accBalanceCollection.html' class="btn btn-xs btn-default color-success">查看明细</a></span></p>
+                            <p class="both-side-distribute clearfix"><label>未开票金额：</label><span>3,000.00</span><a href='javascript:;' class="btn btn-xs btn-default fr color-success">未结算数据查询</a></p>
+                        </div>
+                        <div class="wrapper-content">
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label">配送中金额：</label><span class="color-success">-</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label">应收总汇：</label><span class="color-success">-</span>
+                                </p>
+                            </div>
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label long-width">到货未对账金额：</label><span class="color-success">-</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label long-width">统计时间：</label><span>-</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="wrapper-content width-border">
+                            <p class="font-middle">应付余额：</p>
+                            <p><span class="color-warning font-middle">6,500.00</span><span class="pd-l-20"><a href='accBalancePay.html' class="btn btn-xs btn-default color-warning">查看明细</a></span></p>
+                            <p class="both-side-distribute clearfix"><span>未回票金额：3,000.00</span><a href='javascript:;' class="btn btn-xs btn-default fr color-warning">未结算数据查询</a></p>
+                        </div>
+                        <div class="wrapper-content">
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label">配送中金额：</label><span class="color-warning">-</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label">应付总汇：</label><span class="color-warning">-</span>
+                                </p>
+                            </div>
+                            <div class="wrapper">
+                                <p>
+                                    <label for="" class="form-label long-width">到货未对账金额：</label><span class="color-warning">-</span>
+                                </p>
+                                <p>
+                                    <label for="" class="form-label long-width">统计时间：</label><span>-</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            //订单号后面按钮
+            $('.order-number').bind({
+                focus: function() {
+                    $('.order-number-btn').show();
+                },
+                blur: function() {
+                    $('.order-number-btn').hide();
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

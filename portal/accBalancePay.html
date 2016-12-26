@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>应付账款明细</title>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/index.css" media="all" />
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="global-header">
+            <div class="middle-box">
+                <ul class="global-content fr">
+                    <li class="global-item">您好，134****5648</li>
+                    <li class="global-item"> | </li>
+                    <li class="global-item"><a href="helpCenter/helpCenter.html">帮助中心</a></li>
+                    <li class="global-item"> | </li>
+                    <li class="global-item">
+                        <a href="login.html">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-box header">
+            <a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+                <img src="img/logo.png" />
+            </a>
+            <ul class="nav">
+                <li><a href="acc.html">首页</a></li>
+                <li><a href="tradeRecord.html">账户交易</a></li>
+                <li class="active"><a href="accBalance.html">账面结算</a></li>
+                <li><a href="securityCenter.html">安全中心</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="nav-level-two">
+        <div class="middle-box">
+            <ul class="nav-name-list">
+                <li class="nav-name-item">
+                    <a href="accBalanceCollection.html">应收账款明细</a>
+                </li>
+                <li class="nav-name-item active">
+                    <a href="accBalancePay.html">应付账款明细</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content middle-box acc-balance">
+        <div class="content-header">
+            <p class="tc">供应商：<em class="color-primary">新奥能源贸易有限公司</em></p>
+        </div>
+        <div class="content-header">
+            <p>
+                <span>应付余额(元)：<em class="color-warning">6,500.00</em></span>
+                <span>未回票金额(元)：16,800.00</span>
+                <a href="accBalance.html" class="link font-small">返回账面列表</a>
+            </p>
+            <p class="bg-default">
+                <span>配送中金额(元)：<em class="color-warning">8,000.00</em></span>
+                <span>到货未对账金额(元)：<em class="color-warning">3,000.00</em></span>
+                <span>应付汇总(元)：<em class="color-warning">17,500.00</em>
+                    <em class="tips">
+                        <i class="tips-content" style="width: 280px;">
+                            应付汇总=应付余额+配送中金额+到货未对账金额
+                        </i>
+                    </em>
+                </span>
+                <button class="btn btn-primary btn-xs">未结算数据查询</button>
+            </p>
+        </div>
+        <div class="table-content">
+            <div class="table-nowrap">
+                <table class="table table-center table-hover">
+                    <thead>
+                        <tr class="table-header">
+                            <th colspan="4">结算单往来明细</th>
+                            <th>日期</th>
+                            <th colspan="4">付款流水明细</th>
+                            <th>历史余额</th>
+                        </tr>
+                        <tr>
+                            <th>结算订单号</th>
+                            <th>应付金额(元)</th>
+                            <th>已回票金额(元)</th>
+                            <th>状态</th>
+                            <th>日期</th>
+                            <th>付款订单号</th>
+                            <th>类型</th>
+                            <th>交易金额(元)</th>
+                            <th>渠道</th>
+                            <th>应付余额(元)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12340000000003</td>
+                            <td class="amount color-warning">10,000.00</td>
+                            <td class="amount">0.00</td>
+                            <td>未付清</td>
+                            <td>2016-12-03 11:17:55</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td></td>
+                            <td class="amount color-warning">6,500.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="amount"></td>
+                            <td class="amount color-warning"></td>
+                            <td></td>
+                            <td>2016-12-01 10:14:55</td>
+                            <td>54321000000006</td>
+                            <td>协议预付 | 直接支付</td>
+                            <td class="amount color-warning">6,000.00</td>
+                            <td>平安银行</td>
+                            <td class="amount color-warning">-3,500.00</td>
+                        </tr>
+                        <tr class="bold bg-default">
+                            <td>11月小结：</td>
+                            <td class="amount color-warning">0.00</td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-11-25 11:28:49</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning">5,000.00</td>
+                            <td></td>
+                            <td class="amount color-warning">2,500.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-11-08 11:30:17</td>
+                            <td>54321000000005</td>
+                            <td>协议预付 | 直接支付</td>
+                            <td class="amount color-warning">5,000.00</td>
+                            <td>平安银行</td>
+                            <td class="amount color-warning">2,500.00</td>
+                        </tr>
+                        <tr class="bold bg-default">
+                            <td>10月小结：</td>
+                            <td class="amount color-warning">9,000.00</td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-10-25 11:28:49</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning">2,000.00</td>
+                            <td></td>
+                            <td class="amount color-warning">7,500.00</td>
+                        </tr>
+                        <tr>
+                            <td>12340000000002</td>
+                            <td class="amount color-warning">5,000.00</td>
+                            <td class="amount">2,000.00</td>
+                            <td>已付清</td>
+                            <td>2016-10-08 11:17:55</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td></td>
+                            <td class="amount color-warning">7,500.00</td>
+                        </tr>
+                        <tr>
+                            <td>12340000000001</td>
+                            <td class="amount color-warning">4,000.00</td>
+                            <td class="amount">4,000.00</td>
+                            <td>已付清</td>
+                            <td>2016-10-05 11:17:55</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td></td>
+                            <td class="amount color-warning">2,500.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-10-02 11:30:17</td>
+                            <td>54321000000004</td>
+                            <td>协议预付 | 直接支付</td>
+                            <td class="amount color-warning">2,000.00</td>
+                            <td>平安银行</td>
+                            <td class="amount color-warning">-1,500.00</td>
+                        </tr>
+                        <tr class="bold bg-default">
+                            <td>09月小结：</td>
+                            <td class="amount color-warning">1,000.00</td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-09-25 11:28:49</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning">500.00</td>
+                            <td></td>
+                            <td class="amount color-warning">500.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-09-02 11:30:17</td>
+                            <td>54321000000003</td>
+                            <td>退款 | 担保支付退款</td>
+                            <td class="amount color-success">500.00</td>
+                            <td>平安银行</td>
+                            <td class="amount color-warning">500.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-09-02 11:30:17</td>
+                            <td>54321000000002</td>
+                            <td>协议预付 | 担保支付</td>
+                            <td class="amount color-warning">1,000.00</td>
+                            <td>平安银行</td>
+                            <td class="amount color-warning">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>12340000000000</td>
+                            <td class="amount color-warning">1,000.00</td>
+                            <td class="amount">200.00</td>
+                            <td>已付清</td>
+                            <td>2016-09-01 11:17:55</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning"></td>
+                            <td></td>
+                            <td class="amount color-warning">1,000.00</td>
+                        </tr>
+                        <tr class="bold bg-default">
+                            <td>08月小结：</td>
+                            <td class="amount color-warning">0.00</td>
+                            <td class="amount"></td>
+                            <td></td>
+                            <td>2016-08-25 11:28:49</td>
+                            <td></td>
+                            <td></td>
+                            <td class="amount color-warning">0.00</td>
+                            <td></td>
+                            <td class="amount color-warning">0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

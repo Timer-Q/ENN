@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title><script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/index.css" media="all" />
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="global-header">
+            <div class="middle-box">
+                <ul class="global-content fr">
+                    <li class="global-item">您好，134****5648</li>
+                    <li class="global-item"> | </li><li class="global-item"><a href="helpCenter/helpCenter.html">帮助中心</a></li><li class="global-item"> | </li>
+                    <li class="global-item">
+                        <a href="login.html">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-box header">
+            <a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+                <img src="img/logo.png" />
+            </a>
+            <ul class="nav">
+                <li><a href="acc.html">首页</a></li>
+                <li><a href="tradeRecord.html">账户交易</a></li>
+                <li class="active"><a href="accBalance.html">账面结算</a></li>
+                <li><a href="securityCenter.html">安全中心</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="nav-level-two">
+        <div class="middle-box">
+            <ul class="nav-name-list">
+                <li class="nav-name-item">
+                    <a href="accBalance.html">账面余额</a>
+                </li>
+                <li class="nav-name-item active">
+                    <a href="accountPayable.html">付款结算单</a>
+                </li>
+                <li class="nav-name-item">
+                    <a href="accountReciveable.html">收款结算单</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content middle-box">
+        <p class="content-header">订单详情</p>
+        <div class="table-content info order-detail">
+            <p class="order-detail-header">应付订单信息</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>结算订单号</th>
+                        <th>供应商</th>
+                        <th>应付(元)</th>
+                        <th>已付(元)</th>
+                        <th>在途(元)</th>
+                        <th>已回票(元)</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>2016-10-27</p>
+                            <p>15:10:43</p>
+                        </td>
+                        <td>123456789012345678</td>
+                        <td>新奥能源贸易有限公司</td>
+                        <td class="color-warning">30,000.00</td>
+                        <td class="color-warning">10,000.00</td>
+                        <td class="color-warning">10,000.00</td>
+                        <td>0.00</td>
+                        <td>未付清</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-content info order-detail">
+            <p class="order-detail-header">实付订单信息</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>付款订单号</th>
+                        <th>类型</th>
+                        <th>供应商</th>
+                        <th>订单金额(元)</th>
+                        <th>冲抵金额(元)</th>
+                        <th>渠道</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>2016-10-30</p>
+                            <p>15:53:56</p>
+                        </td>
+                        <td>654456789012345677</td>
+                        <td>协议预付 | 担保支付</td>
+                        <td>
+                            <p>新奥能源贸易有限公司</p>
+                        </td>
+                        <td class="color-warning">- 10,000.00</td>
+                        <td class="color-warning">- 5,000.00</td>
+                        <td>平安银行</td>
+                        <td>成功</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2016-10-29</p>
+                            <p>15:54:59</p>
+                        </td>
+                        <td>654456789012345676</td>
+                        <td>协议预付 | 担保支付</td>
+                        <td>
+                            <p>新奥能源贸易有限公司</p>
+                        </td>
+                        <td class="color-warning">- 5,000.00</td>
+                        <td class="color-warning">- 5,000.00</td>
+                        <td>平安银行</td>
+                        <td>成功</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2016-10-28</p>
+                            <p>15:54:59</p>
+                        </td>
+                        <td>654456789012345675</td>
+                        <td>协议预付 | 担保支付</td>
+                        <td>
+                            <p>新奥能源贸易有限公司</p>
+                        </td>
+                        <td class="color-warning">- 10,000.00</td>
+                        <td class="color-warning">- 10,000.00</td>
+                        <td>平安银行</td>
+                        <td>处理中</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-content info order-detail">
+            <p class="order-detail-header">退款信息</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>原支付订单号</th>
+                        <th>退款订单号</th>
+                        <th>退款金额(元)</th>
+                        <th>类型</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>2016-10-27</p>
+                            <p>15:58:15</p>
+                        </td>
+                        <td>654456789012345677</td>
+                        <td>123456789012345000</td>
+                        <td class="color-success">+ 5,000.00</td>
+                        <td>退款 | 担保支付退款</td>
+                        <td>成功</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

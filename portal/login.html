@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title><script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/unslider.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/unslider.js"></script>
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="middle-box header">
+            <a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+                <img src="img/logo.png" />
+            </a>
+            <ul class="nav">
+                <li class="active"><a href="login.html">登录</a></li>
+                <li><a href="helpCenter/helpCenter.html">帮助中心</a></li>
+                <li><a href="aboutUs/aboutUs.html">关于我们</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="jumbotron">
+        <div class="middle-box">
+            <div class="login">
+                <div class="form-content">
+                    <form action="acc.html">
+                        <h2 class="login-header">登录好易付</h2>
+                        <div class="form-item">
+                            <label for="" class="icon icon-user">用户名</label>
+                            <input type="text" class="form-control" placeholder="手机号/邮箱">
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="icon icon-password">密码</label>
+                            <input type="password" class="form-control" placeholder="密码">
+                        </div>
+                        <div class="form-item form-item-sm">
+                            <label for="" class="icon icon-code">验证码</label>
+                            <input type="text" class="form-control" placeholder="验证码">
+                        </div>
+                        <span class="code">
+                                <img src="./img/code.png" alt="验证码" title="点击切换验证码">
+                            </span>
+                        <p class="color-primary">
+                            <a href="./regist/createPersonalAccount.html" class="color-primary">激活</a>
+                            <span class="fr">
+                                    <a href="./regist/createPersonalAccount.html" class="color-primary">注册 </a> |
+                                    <a href="javascript:;" class="color-primary"> 忘记密码？</a>
+                                </span>
+                        </p>
+                        <p class="error">请输入用户名</p>
+                        <div class="btn-group"><button class="btn btn-sm btn-primary">登录</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="unslider-banner has-dots">
+            <ul class="">
+                <li class="unslider-banner-bg-0"></li>
+                <li class="unslider-banner-bg-1"></li>
+                <li class="unslider-banner-bg-2"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="middle-box">
+            <div class="thumbnail fl">
+                <h2>安全保障</h2>
+                <h3>实时风险监控</h3>
+                <p>动态密码与支付密码双重安全校验</p>
+            </div>
+            <img src="./img/index-sup-image-1.png" class="fr" alt="" />
+        </div>
+    </div>
+    <div class="row bg-default">
+        <div class="middle-box">
+            <img src="./img/index-sup-image-3.png" class="fl" alt="" />
+            <div class="thumbnail fr">
+                <h2>安全保障</h2>
+                <h3>实时风险监控</h3>
+                <p>动态密码与支付密码双重安全校验</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="copyright">
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=cq&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">平台介绍</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=bg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">联系我们</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=sg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">法律声明</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=tg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">友情链接</a>
+        </p>
+        <p class="copyright">
+            COPYRIGHT©好气网 www.greatgas.cn <a href="http://www.miitbeian.gov.cn" target="_blank" class="color-primary">湘ICP备15010771号-1</a> <a href="http://www.miit.cc/verifyseal/157622" target="_blank" class="color-primary">湘B2-20150111</a>
+        </p>
+    </footer>
+    <script>
+        $(function() {
+            $('.form-control').on('focusout', function() {
+                $('.error').slideDown('fast');
+            });
+            //unslider start
+            var delayTime = 3000;
+            var slider = $('.unslider-banner').unslider({
+                speed: 500,
+                delay: delayTime,
+                keys: true,
+                dots: true,
+                fluid: false,
+                nav: true,
+                arrows: false,
+                starting: function() {
+                    console.log("starting");
+                },
+                complete: function() {
+                    console.log("complete");
+                },
+                autoplay: true
+            });
+
+            var data = slider.data('unslider');
+
+            $('.unslider-nav li').click(function() {
+                $('.unslider-nav li').children('span').stop(true);
+                $(this).children('span').css('width', '100%');
+                $(this).siblings('li').children('span').css('width', '0')
+            });
+
+            $('.unslider-nav li').eq(0).children('span').animate({
+                width: '100%'
+            }, delayTime, function() {
+                $('.unslider-nav li').eq(0).children('span').css('width', '0');
+            });
+
+            slider.on('unslider.change', function(event, index, slide) {
+                $('.unslider-nav li').children('span').css('width', '0');
+                $('.unslider-nav li').eq(index).children('span').animate({
+                    width: '100%'
+                }, delayTime, function() {
+                    $('.unslider-nav li').eq(index).children('span').css('width', '0');
+                });
+            });
+            //unslider stop
+        });
+    </script>
+</body>
+
+</html>

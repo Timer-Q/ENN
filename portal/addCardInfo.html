@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加银行卡</title><script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/index.css" media="all" />
+    <!--<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>-->
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="global-header">
+            <div class="middle-box">
+                <ul class="global-content fr">
+                    <li class="global-item">您好，134****5648</li>
+                    <li class="global-item"> | </li><li class="global-item"><a href="helpCenter/helpCenter.html">帮助中心</a></li><li class="global-item"> | </li>
+                    <li class="global-item">
+                        <a href="login.html">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-box header">
+            <a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+                <img src="img/logo.png" />
+            </a>
+            <ul class="nav">
+                <li><a href="acc.html">首页</a></li>
+                <li><a href="tradeRecord.html">账户交易</a></li>
+                <li><a href="accBalance.html">账面结算</a></li>
+                <li class="active"><a href="securityCenter.html">安全中心</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="nav-level-two">
+        <div class="middle-box">
+            <ul class="nav-name-list">
+                <li class="nav-name-item active">
+                    <a href="modifyBindPhone.html">添加账户</a>
+                </li>
+                <li class="nav-name-item">
+                    <a href="modifyBindPhone.html">修改绑定手机号</a>
+                </li>
+                <!--<li class="nav-name-item">
+                    <a href="setupPayPassword/setupPayPasswordIdentify.html">设置支付密码</a>
+                </li>-->
+                <li class="nav-name-item">
+                    <a href="resetPayPassword.html">重置支付密码</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content middle-box">
+        <p class="content-header">添加账户</p>
+        <form action="success.html">
+            <div class="form-content">
+                <div class="form-group">
+                    <label for="" class="form-label">公司名称</label>
+                    <span>新奥能源贸易有限公司</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">证件类型</label>
+                    <span>营业执照</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">证件号码</label>
+                    <span>4862333666</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">银行卡号</label>
+                    <input type="text" class="form-control form-control-danger" placeholder="请输入银行卡号" />
+                    <span class="form-error-content"><em class="form-error-content-arrow"></em>错误信息</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">发卡行</label>
+                    <p type="text" class="form-control">123</p>
+                    <a href="#" class="color-primary">选择银行</a>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">支付密码</label>
+                    <input type="text" class="form-control" placeholder="请输入支付密码" />
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <button type="submit" class="btn btn-sm btn-primary">下一步</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

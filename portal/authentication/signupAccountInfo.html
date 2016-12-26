@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>开通企业账户</title>
+    <script src="../js/html5shiv.js"></script>
+    <link rel="stylesheet" href="../css/index.css" media="all" />
+    <link rel="stylesheet" href="../css/select2.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="global-header">
+            <div class="middle-box">
+                <ul class="global-content fr">
+                    <li class="global-item">您好，134****5648</li>
+                    <li class="global-item"> | </li>
+                    <li class="global-item"><a href="helpCenter/helpCenter.html">帮助中心</a> </li>
+                    <li class="global-item"> | </li>
+                    <li class="global-item">
+                        <a href="../login.html">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-box header">
+            <a href="https://www.greatgas.cn/web/customer/auth/login.html?artemisToken=NBLH-CN0B-LYED-62BO-12V2-S9CP-J94A-XKKH" class="logo">
+                <img src="../img/logo.png" />
+            </a>
+            <ul class="nav">
+                <li><a href="../acc.html">首页</a></li>
+                <li><a href="../tradeRecord.html">账户交易</a></li>
+                <li><a href="../accBalance.html">账面结算</a></li>
+                <li class="active"><a href="../securityCenter.html">安全中心</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="nav-level-two">
+        <div class="middle-box">
+            <ul class="nav-name-list">
+                <li class="nav-name-item active"><a href="openBusinessAccount.html">实名认证</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content middle-box">
+        <p class="content-header">开通企业账户</p>
+        <p class="process-inline">
+            <span class="color-success"><i>1</i>账户信息</span>
+            <span><i>2</i>联系人信息</span>
+            <span><i>3</i>开通成功</span>
+        </p>
+        <form action="signupContactsInfo.html">
+            <div class="category category-warning">
+                <span class="category-title">公司信息</span>
+                <p class="category-line"></p>
+            </div>
+            <div class="form-content">
+                <div class="form-group">
+                    <label for="" class="form-label">公司名称</label>
+                    <span>好买气电子商务有限公司</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">营业执照注册号/统一信用代码</label>
+                    <span>334****88</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">企业注册地址</label>
+                    <input type="text" class="form-control" placeholder="请输入企业注册地址">
+                </div>
+            </div>
+            <div class="category category-info">
+                <span class="category-title">账户信息</span>
+                <p class="category-line"></p>
+            </div>
+            <div class="form-content">
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">银行账号</label>
+                    <input type="text" class="form-control" placeholder="请输入银行账号">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">账户开户行</label>
+                    <select class="form-control select2" style="width: 240px;">
+                        <option selected="selected">中国工商银行</option>
+                        <option>华夏银行</option>
+                        <option>中国建设银行</option>
+                        <option>中信银行</option>
+                        <option>平安银行</option>
+                        <option>中国农业银行</option>
+                        <option>中国银行</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">账号开户地</label>
+                    <span class="select-group">
+                        <select name="" id="" class="form-control form-control-danger">
+                            <option value="">北京</option>
+                            <option value="">天津</option>
+                            <option value="">重庆</option>
+                        </select>
+                        <select name="" id="" class="form-control form-control-danger">
+                            <option value="">朝阳区</option>
+                            <option value="">昌平区</option>
+                            <option value="">通州区</option>
+                        </select>
+                    </span>
+                    <span class="form-error-content"><em class="form-error-content-arrow"></em>错误信息</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">账号开户支行</label>
+                    <input type="text" class="form-control" placeholder="请输入账号开户支行">
+                    <a href="javascript:void(0);" class="color-primary" id="chooseSubbranch">选择开户支行</a>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">UKEY邮寄地址</label>
+                    <input type="text" class="form-control" placeholder="请输入UKEY邮寄地址">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label form-necessary">邮政编码</label>
+                    <input type="text" class="form-control" placeholder="请输入邮政编码">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" /> 我已阅读并同意申请好气网平安易宝账户<a href="#" class="color-primary"> 用户服务协议</a>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <button class="btn btn-sm btn-primary">下一步</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal subbranch-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog">
+            <form action="signupSuccess.html">
+                <div class="modal-header">
+                    <button class="btn-close" type="button">&times;</button>
+                    <h3>选择其他银行</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="subbranch">
+                            <div class="form-group">
+                                <label for="" class="form-label">所在支行</label>
+                                <input type="text" class="form-control" id="indexing" placeholder="支持模糊查询">
+                                <button class="btn-search" type="button">搜索</button>
+                            </div>
+                        </div>
+                        <div class="table-content">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>银行行号</th>
+                                        <th>银行名称</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>102121000012</td>
+                                        <td>中国工商银行股份有限公司河北省分行业务处理中心-不办转汇业务</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>102121000029</td>
+                                        <td>中国工商银行河北省分行营业部业务处理中心</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>102121000037</td>
+                                        <td>中国工商银行石家庄东风支行</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>102121000045</td>
+                                        <td>中国工商银行石家庄桥西支行</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>102121000053</td>
+                                        <td>中国工商银行股份有限公司石家庄裕东支行</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>102121000061</td>
+                                        <td>中国工商银行石家庄和平支行</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>102121000070</td>
+                                        <td>中国工商银行石家庄长安支行</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>123456789987</td>
+                                        <td>中国工商银行股份有限公司河北省分行业务处理中心-不办转汇业务</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>123456789987</td>
+                                        <td>中国工商银行股份有限公司河北省分行业务处理中心-不办转汇业务</td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-xs">选择</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group tc">
+                        <button class="btn btn-primary btn-sm">确定</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="copyright">
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=cq&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">平台介绍</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=bg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">联系我们</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=sg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">法律声明</a> |
+            <a href="https://www.greatgas.cn/support/support/help/aboutUs?id=tg&artemisToken=OL6H-PISR-8ZQA-5IRG-5HVS-72UE-SNSC-RVZW" target="_blank">友情链接</a>
+        </p>
+        <p class="copyright">
+            COPYRIGHT©好气网 www.greatgas.cn <a href="http://www.miitbeian.gov.cn" target="_blank" class="color-primary">湘ICP备15010771号-1</a> <a href="http://www.miit.cc/verifyseal/157622" target="_blank" class="color-primary">湘B2-20150111</a>
+        </p>
+    </footer>
+</body>
+<script src="../js/select2.full.js"></script>
+<script>
+    $(function() {
+        $(".select2").select2();
+
+        $('#chooseSubbranch').click(function() {
+            modalShow('.modal');
+        });
+        // 查询
+        var bank_name = [];
+        var tr = $('.table tbody tr');
+        tr.each(function(idx, ele) {
+            bank_name.push({
+                index: idx,
+                name: $(ele).children('td').eq(1).text().trim()
+            });
+        });
+        var indexing_value = '';
+        $('.btn-search').on('click', function() {
+            indexing_value = $('#indexing').val().replace(/\s+/g, '');
+            var indexing_value_arr = indexing_value.split('');
+            if (indexing_value) {
+                bank_name.forEach(function(element, index) {
+                    var flag = true;
+                    indexing_value_arr.forEach(function(ele) {
+                        if (element.name.indexOf(ele) >= 0) {
+                            flag = false;
+                        }
+                    });
+                    if (flag) {
+                        tr.eq(index).fadeOut();
+                    }
+                });
+            } else {
+                tr.fadeIn();
+            }
+        });
+        $('#indexing').on('focusout focusin', function() {
+            if (!$(this).val()) {
+                tr.fadeIn();
+            }
+        });
+        $('#indexing').on('focusin', function() {
+            tr.fadeIn();
+        });
+    })
+</script>
+
+</html>
