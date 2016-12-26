@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>鉴权支付</title><script src="js/html5shiv.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="middle-box login-pos">
+                <span class="fr">
+				尊敬的 15727312731，欢迎使用好气网
+			</span>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="middle-box clearfix">
+                <a href="http://172.16.17.226:8080/cashier/homepage" class="logo"></a>
+                <span class="f18 fl mt30"> | 我的收银台</span>
+                <span class="fr mt30 pb10 c2">
+			账户ID:15727312731</span>
+            </div>
+        </div>
+    </div>
+    <div class="middle-box">
+        <div class="content" id="mainBody">
+            <!-- 单笔订单 -->
+            <div class="main">
+                <div class="maintop clearfix" id="mainInfo">
+                    <div class="lefttitle">
+                        <div class="list1">
+                            <span class="side1">收款方：</span> <span class="side2" id="mercNm">新奥能源贸易有限公司</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">订单日期：</span><span class="side2">2016-10-27 19:35:07</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">付款订单号：</span> <span class="side2" id="mercNm">123456789012345678</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">业务类型：</span> <span class="side2 ellipsis">协议预付</span>
+                        </div>
+                    </div>
+                    <div class="rightsum">
+                        <div class="list1">
+                            <span>付款金额：</span><span class="sum" id="aplAmt">
+                            1,000.00
+                            </span> 元
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bd mt30">
+            <p class="common-header">支付方式</p>
+            <div class="">
+                <!--<form action="#">-->
+                <ul class="show-card-list">
+                    <li class="show-card-item">
+                        <input checked="checked" type="radio" name="show-card" id="6228480018400168177" value="ABC" crdactyp="0" bnkphone="18900000000" cardno="6228480018400168177">
+                        <label for="">
+                                <img src="images/pabclogo.png" width="107">
+                                <em class="ellipsis f14">平安银行直接支付</em>
+                                <span class="pd0-20 f14"><span class="c9">(1,000,000.00 元)</span></span>
+                            </label>
+                        <span class="f16 fr pay-amount-notice" style="display:none;">支付<em class="f20 c-red"> 1000.00 </em>元</span>
+                    </li>
+                    <li class="show-card-item">
+                        <input type="radio" name="show-card" id="6228480018400168178" value="ABC" crdactyp="0" bnkphone="18900000000" cardno="6228480018400168177">
+                        <label for="">
+                                <img src="images/pabclogo.png" width="107">
+                                <em class="ellipsis f14">平安银行担保支付</em>
+                                <span class="pd0-20 f14"><span class="c9">(1,000,000.00 元)</span></span>
+                            </label>
+                        <span class="f16 fr pay-amount-notice" style="display:none;">支付<em class="f20 c-red"> 1000.00 </em>元</span>
+                    </li>
+                    <li class="show-card-item">
+                        <input type="radio" name="show-card" id="interBank">
+                        <label for="">
+                               <img src="images/pabclogo.png" width="107">
+                                <span class="f14">跨行收单</span>
+                            </label>
+                    </li>
+                </ul>
+                <div class="input-group-mb20 pt30">
+                    <div class="pay-card">
+                        <div id="misDiv" class="input-group clearfix">
+                            <span class="input-group-name">支付密码</span>
+                            <div class="input-group-cont">
+                                <input type="password" name="" id="" value="" class="input-group-input-tx input-group-input-code" placeholder="请输入支付密码" />
+                            </div>
+                            <div style="display: none;" class="red-pop" id="red-pop-bd-pw">
+                                <div class="pop-tool-aorrw pop-tool-aorrw-left"></div>
+                                <div class="red-pop-bd">
+                                    <span id="PAY_PSWDInfoDiv"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group-mb20 accountPay">
+                    <div class="pay-card">
+                        <div id="misDiv" class="input-group clearfix">
+                            <span class="input-group-name">&nbsp;</span>
+                            <div class="input-group-cont">
+                                <button class="btn btn-sm btn-info" type="button" id="confirm-pay">确认付款</button>
+                                <img src="./images/wait.gif" alt="" width="25" class="ml10" id="wait" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group-mb20 mt30 interBankPay" style="display: none;">
+                    <div class="pay-card">
+                        <div id="misDiv" class="input-group clearfix">
+                            <span class="input-group-name">&nbsp;</span>
+                            <div class="input-group-cont">
+                                <button class="btn btn-sm btn-info" id="onlineBank" type="button">登录到网上银行支付</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>
+            <a href="javascript:void(0);" target="_blank">平台介绍</a> |
+            <a href="javascript:void(0);" target="_blank">联系我们</a> |
+            <a href="javascript:void(0);" target="_blank">法律声明</a> |
+            <a href="javascript:void(0);" target="_blank">友情链接</a>
+        </p>
+        <p class="copyright">
+            COPYRIGHT©好气网 www.greatgas.cn <a href="http://www.miitbeian.gov.cn" target="_blank" class="c-blue">湘ICP备15010771号-1</a> <a href="http://www.miit.cc/verifyseal/157622" target="_blank" class="c-blue">湘B2-20150111</a>
+        </p>
+    </div>
+    <div class="fixed-pop">
+        <div class="pop-bd pop-sm">
+            <div class="pop-hd pop-hd-gray">
+                <h2>支付结果</h2>
+                <div class="pop-close-icon pop-close-icon-pos"></div>
+            </div>
+            <div class="pop-content">
+                <div class="pop-p-tx tc">
+                    <p>请在新开网银页面完成操作后再进行选择</p>
+                    <p class="f14">支付完成前请不要关闭此窗口</p>
+                    <p class="f14">完成支付后请根据您的情况点击下面的按钮</p>
+                    <p class="tc mt20">
+                        <button class="btn btn-sm btn-info" type="button">已完成支付</button>
+                        <button class="btn btn-sm btn-info" type="button">支付遇到问题</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pop-bd-bg"></div>
+    </div>
+    <script>
+        $(function() {
+            // 支付
+            $('#confirm-pay').on('click', function() {
+                $('#wait').fadeIn('fast');
+                $(this).prop('disabled', true);
+                window.setTimeout(function() {
+                    $('#wait').fadeOut('fast');
+                    $('#confirm-pay').removeProp('disabled');
+                }, 10000);
+            })
+
+            /*显示支付金额*/
+            $('input[type=radio][name="show-card"]:checked').siblings('.pay-amount-notice').show();
+            $('.show-card-item').click(function() {
+                var _this = $(this);
+                var subRadio = _this.children('input[name=show-card]');
+                subRadio.prop('checked', true);
+                $('.pay-amount-notice').hide();
+                if (subRadio.prop('checked') && (subRadio.prop('id') !== 'interBank')) {
+                    subRadio.siblings('.pay-amount-notice').show();
+                    if ($('.accountPay').css('display') !== 'block') {
+                        $('.accountPay').show().siblings('.interBankPay').hide();
+                    }
+                } else {
+                    $('.accountPay').hide().siblings($('.interBankPay')).show();
+                };
+            });
+
+            // modal
+            $('#onlineBank').on('click', function() {
+                $('.fixed-pop').fadeIn();
+            });
+            $('.pop-close-icon').on('click', function() {
+                $('.fixed-pop').fadeOut();
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://172.16.17.226:8080/cashier/pay/DirectPayment -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>退款</title><script src="js/html5shiv.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="middle-box login-pos">
+                <span class="fr">
+                尊敬的 15727312731，欢迎使用好气网
+            </span>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="middle-box clearfix">
+                <a href="http://172.16.17.226:8080/cashier/homepage" class="logo"></a>
+                <span class="f18 fl mt30"> | 我的收银台</span>
+                <span class="fr mt30 pb10 c2">
+            账户ID:15727312731</span>
+            </div>
+        </div>
+    </div>
+    <div class="middle-box">
+        <div class="content" id="mainBody">
+            <!-- 单笔订单 -->
+            <div class="main">
+                <div class="maintop clearfix" id="mainInfo">
+                    <div class="lefttitle">
+                        <div class="list1">
+                            <span class="side1">收款方：</span> <span class="side2" id="mercNm">新奥能源贸易有限公司</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">订单日期：</span> <span class="side2 ellipsis">2016-10-26 19:35:07</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">退款订单号：</span> <span class="side2" id="mercNm">123456789012341200</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">业务类型：</span><span class="side2">退款 | 直接支付退款</span>
+                        </div>
+                    </div>
+                    <div class="rightsum">
+                        <div class="list1">
+                            <span>退款金额：</span><span class="sum" id="aplAmt">
+                            60,000.00
+                            </span> 元
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bd mt30">
+            <div class="common-header clearfix f14">
+                <p class="fl">
+                    原付款订单信息
+                </p>
+            </div>
+            <div class="">
+                <form action="#">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>付款订单号</th>
+                                <th>订单金额(元)</th>
+                                <th>已冲抵金额(元)</th>
+                                <th>类型</th>
+                                <th>渠道</th>
+                                <th>状态</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2016-10-25 14:22:26</td>
+                                <td>123456789012345623</td>
+                                <td class="c-red">-10,000.00</td>
+                                <td class="c-red">-10,000.00</td>
+                                <td>协议预付 | 直接支付</td>
+                                <td>平安银行</td>
+                                <td>成功</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="input-group-list input-group-mb20 mt10">
+                        <div class="input-group-mb20">
+                            <div class="pay-card">
+                                <div id="misDiv" class="input-group clearfix">
+                                    <span class="input-group-name">支付密码</span>
+                                    <div class="input-group-cont">
+                                        <input type="text" name="" id="" value="" class="input-group-input-tx input-group-input-code" placeholder="请输入支付密码">
+                                    </div>
+                                    <div style="display: none;" class="red-pop" id="red-pop-bd-pw">
+                                        <div class="pop-tool-aorrw pop-tool-aorrw-left"></div>
+                                        <div class="red-pop-bd">
+                                            <span id="PAY_PSWDInfoDiv"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group-mb20">
+                            <div class="pay-card">
+                                <div id="misDiv" class="input-group clearfix">
+                                    <span class="input-group-name">&nbsp;</span>
+                                    <div class="">
+                                        <button class="btn btn-xs btn-info">确认退款</button>
+                                        <button class="btn btn-xs btn-info ml20">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>
+            <a href="javascript:void(0);" target="_blank">平台介绍</a> |
+            <a href="javascript:void(0);" target="_blank">联系我们</a> |
+            <a href="javascript:void(0);" target="_blank">法律声明</a> |
+            <a href="javascript:void(0);" target="_blank">友情链接</a>
+        </p>
+        <p class="copyright">
+            COPYRIGHT©好气网 www.greatgas.cn <a href="http://www.miitbeian.gov.cn" target="_blank" class="c-blue">湘ICP备15010771号-1</a> <a href="http://www.miit.cc/verifyseal/157622" target="_blank" class="c-blue">湘B2-20150111</a>
+        </p>
+    </div>
+</body>
+
+</html>

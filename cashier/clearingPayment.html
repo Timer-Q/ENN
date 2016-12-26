@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>结算付款确认</title><script src="js/html5shiv.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="middle-box login-pos">
+                <span class="fr">
+                尊敬的 15727312731，欢迎使用好气网
+            </span>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="middle-box clearfix">
+                <a href="http://172.16.17.226:8080/cashier/homepage" class="logo"></a>
+                <span class="f18 fl mt30"> | 我的收银台</span>
+                <span class="fr mt30 pb10 c2">
+            账户ID:15727312731</span>
+            </div>
+        </div>
+    </div>
+    <div class="middle-box">
+        <div class="content" id="mainBody">
+            <!-- 单笔订单 -->
+            <div class="main">
+                <div class="maintop clearfix" id="mainInfo">
+                    <div class="lefttitle">
+                        <div class="list1">
+                            <span class="side1">收款方：</span> <span class="side2" id="mercNm">新奥能源贸易有限公司</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">订单日期：</span> <span class="side2 ellipsis">2016-10-26 19:35:07</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">付款订单编号：</span> <span class="side2" id="mercNm">123456789012341239</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">业务类型：</span><span class="side2">结算付款</span>
+                        </div>
+                    </div>
+                    <div class="rightsum">
+                        <div class="list1">
+                            <span>付款金额：</span><span class="sum" id="aplAmt">
+                            1,000.00
+                            </span> 元
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bd mt30">
+            <div class="common-header clearfix f14">
+                <p class="fl">
+                    结算单信息
+                </p>
+                <p class="fr">
+                    应付总汇：10,000.00元
+                    <span class="pd10"> | </span> 已付总汇：4,000.00元
+                    <span class="pd10"> | </span> 已付百分比：40%
+                </p>
+            </div>
+            <div class="">
+                <form action="pay.html">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>结算订单号</th>
+                                <th>应付金额(元)</th>
+                                <th>已付金额(元)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2016-10-25 14:22:26</td>
+                                <td>12345678901234555</td>
+                                <td class="c-red">3,000.00</td>
+                                <td class="c-red">1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-20 14:22:26</td>
+                                <td>12345678901234666</td>
+                                <td class="c-red">5,000.00</td>
+                                <td class="c-red">1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-15 14:22:26</td>
+                                <td>12345678901234777</td>
+                                <td class="c-red">2,000.00</td>
+                                <td class="c-red">2,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="common-header f14">
+                        <p>
+                            应付余额：<span class="c-green f18">6,500.00</span> 元
+                            <span class="pd0-20">未回票金额：<span class="c-green f18">16,800.00</span> 元</span>
+                        </p>
+                    </div>
+                    <div class="btn-group tc">
+                        <button class="btn btn-info btn-xs">
+                            继续支付
+                        </button>
+                        <button class="btn btn-info btn-xs" type="button">
+                            支付关闭
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>
+            <a href="javascript:void(0);" target="_blank">平台介绍</a> |
+            <a href="javascript:void(0);" target="_blank">联系我们</a> |
+            <a href="javascript:void(0);" target="_blank">法律声明</a> |
+            <a href="javascript:void(0);" target="_blank">友情链接</a>
+        </p>
+        <p class="copyright">
+            COPYRIGHT©好气网 www.greatgas.cn <a href="http://www.miitbeian.gov.cn" target="_blank" class="c-blue">湘ICP备15010771号-1</a> <a href="http://www.miit.cc/verifyseal/157622" target="_blank" class="c-blue">湘B2-20150111</a>
+        </p>
+    </div>
+</body>
+
+</html>

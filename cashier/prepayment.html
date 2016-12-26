@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://172.16.17.226:8080/cashier/pay/DirectPayment -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>预付款确认</title><script src="js/html5shiv.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="middle-box login-pos">
+                <span class="fr">
+                尊敬的 15727312731，欢迎使用好气网
+            </span>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="middle-box clearfix">
+                <a href="http://172.16.17.226:8080/cashier/homepage" class="logo"></a>
+                <span class="f18 fl mt30"> | 我的收银台</span>
+                <span class="fr mt30 pb10 c2">
+            账户ID:15727312731</span>
+            </div>
+        </div>
+    </div>
+    <div class="middle-box">
+        <div class="content" id="mainBody">
+            <!-- 单笔订单 -->
+            <div class="main">
+                <div class="maintop clearfix" id="mainInfo">
+                    <div class="lefttitle">
+                        <div class="list1">
+                            <span class="side1">收款方：</span> <span class="side2" id="mercNm">新奥能源贸易有限公司</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">订单日期：</span><span class="side2">2016-10-27 19:35:07</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">付款订单号：</span> <span class="side2" id="mercNm">123456789012345678</span>
+                        </div>
+                        <div class="list1">
+                            <span class="side1">业务类型：</span> <span class="side2 ellipsis">协议预付</span>
+                        </div>
+                    </div>
+                    <div class="rightsum">
+                        <div class="list1">
+                            <span>付款金额：</span><span class="sum" id="aplAmt">
+                            1,000.00
+                            </span> 元
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bd mt30">
+            <div class="common-header clearfix f14">
+                <p class="col-7">
+                    <span class="col-2 tr">
+                        协议号：
+                    </span>
+                    <span class="col-4">123456789098745632</span>
+                    <span class="col-2 tr">
+                        协议单价：
+                    </span>
+                    <span class="col-4">1,000.00/吨</span>
+                </p>
+                <p class="col-7">
+                    <span class="col-2 tr">金额：</span>
+                    <span class="col-4">31,000.00元</span>
+                    <span class="col-2 tr">协议数量：</span>
+                    <span class="col-4">31吨</span>
+                </p>
+                <p class="fr">
+                    已付(元)：30,000.00
+                    <span class="pd10"> | </span> 已付百分比：96.77%
+                </p>
+            </div>
+            <div class="">
+                <form action="pay.html">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>付款订单号</th>
+                                <th>付款金额(元)</th>
+                                <th>类型</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2016-10-17 14:22:26</td>
+                                <td>12345678901231111</td>
+                                <td class="c-red">10,000.00</td>
+                                <td>协议预付 | 直接支付</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-15 14:22:26</td>
+                                <td>12345678901232222</td>
+                                <td class="c-red">10,000.00</td>
+                                <td>协议预付 | 直接支付</td>
+                            </tr>
+                            <tr>
+                                <td>2016-10-05 14:22:26</td>
+                                <td>12345678901233333</td>
+                                <td class="c-red">10,000.00</td>
+                                <td>协议预付 | 直接支付</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="common-header f14">
+                        <p>
+                            当前应付余额：<span class="c-green f18">6,500.00</span> 元
+                        </p>
+                    </div>
+                    <div class="btn-group tc">
+                        <button class="btn btn-info btn-xs">
+                        继续支付
+                    </button>
+                        <button class="btn btn-info btn-xs" type="button">
+                        支付关闭
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>
+            <a href="javascript:void(0);" target="_blank">平台介绍</a> |
+            <a href="javascript:void(0);" target="_blank">联系我们</a> |
+            <a href="javascript:void(0);" target="_blank">法律声明</a> |
+            <a href="javascript:void(0);" target="_blank">友情链接</a>
+        </p>
+        <p class="copyright">
+            COPYRIGHT©好气网 www.greatgas.cn <a href="http://www.miitbeian.gov.cn" target="_blank" class="c-blue">湘ICP备15010771号-1</a> <a href="http://www.miit.cc/verifyseal/157622" target="_blank" class="c-blue">湘B2-20150111</a>
+        </p>
+    </div>
+</body>
+
+</html>
